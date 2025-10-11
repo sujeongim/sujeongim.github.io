@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujeong Im - AI Researcher</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .contact-info a:hover {
+            opacity: 1;
+        }
+
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4a5568;
+        }
+
+        h3 {
+            color: #4a5568;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .edu-item, .work-item, .activity-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #4a5568;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .item-location {
+            color: #666;
+            font-style: italic;
+        }
+
+        .item-date {
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        .item-role {
+            color: #2d3748;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .publication {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .pub-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .pub-venue {
+            color: #4a5568;
+            font-style: italic;
+        }
+
+        .award {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe6f0 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #ffa500;
+        }
+
+        .award-title {
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #c53030;
+            margin-bottom: 5px;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #edf2f7 0%, #e2e8f0 100%);
+            padding: 25px;
+            border-radius: 10px;
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #2d3748;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .item-header {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sujeong Im</h1>
+            <div class="subtitle">PHD · AI, HEALTHCARE, NLP</div>
+            <div class="contact-info">
+                <span>📍 Anyang-si, Gyeonggi-do, Korea</span>
+                <a href="tel:+821076750372">📞 (+82) 10-7675-0372</a>
+                <a href="mailto:imsujeong2190@gmail.com">✉️ imsujeong2190@gmail.com</a>
+            </div>
+            <div class="contact-info">
+                <a href="https://sujeongim.github.io/" target="_blank">🌐 Website</a>
+                <a href="https://github.com/sujeongim" target="_blank">💻 GitHub</a>
+                <a href="https://linkedin.com/in/sujeongim" target="_blank">💼 LinkedIn</a>
+            </div>
+            <div class="quote">"Small improvements, repeated consistently, build meaningful work."</div>
+        </header>
+
+        <div class="content">
+            <section>
+                <h2>Summary</h2>
+                <div class="summary-box">
+                    AI researcher with expertise in healthcare and NLP, currently pursuing a Ph.D. at KAIST. Developed LabTOP, a unified model for lab test outcome prediction, earning Best Paper Award at CHIL 2025. Published research on clinical large language models and decision transformers. Former AI research intern at AIforPet, specializing in computer vision and pose estimation for canine gait analysis. Strong background in backend development, infrastructure automation, and data annotation pipeline design. Passionate about applying machine learning to solve real-world healthcare challenges.
+                </div>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div class="edu-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">KAIST (Korea Advanced Institute of Science and Technology)</div>
+                            <div class="item-role">Ph.D. in AI</div>
+                        </div>
+                        <div>
+                            <div class="item-location">Daejeon, S.Korea</div>
+                            <div class="item-date">Feb. 2025 -</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">KAIST (Korea Advanced Institute of Science and Technology)</div>
+                            <div class="item-role">M.S. in AI</div>
+                        </div>
+                        <div>
+                            <div class="item-location">Daejeon, S.Korea</div>
+                            <div class="item-date">Feb. 2023 - Feb. 2025</div>
+                        </div>
+                    </div>
+                    <div><strong>Thesis:</strong> LabTOP - A Unified Model for Lab Test Outcome Prediction on Electronic Health Records</div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">University of California, Berkeley</div>
+                            <div class="item-role">Visiting Student</div>
+                        </div>
+                        <div>
+                            <div class="item-location">Berkeley, CA, USA</div>
+                            <div class="item-date">Aug. 2018 - Feb. 2022</div>
+                        </div>
+                    </div>
+                    <div><strong>Courses:</strong> Multivariable Calculus, CS101, CS188 (opencourse)</div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">POSTECH (Pohang University of Science and Technology)</div>
+                            <div class="item-role">B.S. in IT Engineering</div>
+                        </div>
+                        <div>
+                            <div class="item-location">Pohang, S.Korea</div>
+                            <div class="item-date">Feb. 2018 - Feb. 2022</div>
+                        </div>
+                    </div>
+                    <div><strong>Courses:</strong> Calculus I, Applied Linear Algebra, Discrete Math, Probability and Statistics, Algorithm, Data Structure, OOP, Machine Learning, Artificial Intelligence</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Research Publications</h2>
+                <div class="publication">
+                    <div class="pub-title">[1] LabTOP: A Unified Model for Lab Test Outcome Prediction on Electronic Health Records</div>
+                    <div>Sujeong Im, Jungwoo Oh, and Edward Choi</div>
+                    <div class="pub-venue">Best Paper (Applications Practice), Conference on Health, Inference, and Learning (CHIL) 2025</div>
+                </div>
+
+                <div class="publication">
+                    <div class="pub-title">[2] Publicly Shareable Clinical Large Language Model Built on Synthetic Clinical Notes</div>
+                    <div>Sunjun Kweon et al.</div>
+                    <div class="pub-venue">Findings of the Association for Computational Linguistics ACL 2024, pp. 5148–5168</div>
+                </div>
+
+                <div class="publication">
+                    <div class="pub-title">[3] Clinical Decision Transformer: Intended Treatment Recommendation through Goal Prompting</div>
+                    <div>Seunghyun Lee, Da Young Lee, Sujeong Im, Nan Hee Kim, and Sung-Min Park</div>
+                    <div class="pub-venue">arXiv preprint arXiv:2302.00612 (2023)</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Honors & Awards</h2>
+                <div class="award">
+                    <div class="award-title">🏆 Best Paper Award (Applications & Practice)</div>
+                    <div><strong>Conference:</strong> 6th Annual Conference on Health, Inference, and Learning (CHIL) 2025</div>
+                    <div><strong>Paper:</strong> "LabTOP: A Unified Model for Lab Test Outcome Prediction on Electronic Health Records"</div>
+                    <div><strong>Location:</strong> Berkeley, CA, U.S.A</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Work Experience</h2>
+                <div class="work-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">AIforPet</div>
+                            <div class="item-role">AI Research Intern</div>
+                        </div>
+                        <div>
+                            <div class="item-location">Seoul, S.Korea</div>
+                            <div class="item-date">Jun. 2021 - Sep. 2021</div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Implemented dog tracking and background removal techniques using OpenCV to preprocess walking video data</li>
+                        <li>Applied pose estimation models to canine gait videos and conducted comparative performance evaluation of prior models</li>
+                        <li>Set up a data annotation environment tailored for tagging canine joint positions</li>
+                        <li>Prepared a labeling pipeline using DeepLabCut; created tutorials and environment setup guides</li>
+                        <li>Automated dog cropping from video frames using OpenCV and Darknet to reduce annotation workload</li>
+                        <li>Converted annotation files from XML to JSON format to improve compatibility with model training pipelines</li>
+                        <li>Led pilot tagging sessions and defined consistent annotation guidelines</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Extracurricular Activities</h2>
+                <div class="activity-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">APGC-Lab (POSTECH entrepreneurship support group)</div>
+                            <div class="item-role">Manager</div>
+                        </div>
+                        <div>
+                            <div class="item-location">Pohang, S.Korea</div>
+                            <div class="item-date">Feb. 2019 - Dec. 2020</div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Led overall operations of APGC-Lab and its community sub-division</li>
+                        <li>Planned and hosted the startup hackathon "Random Talk Show"</li>
+                        <li>Encouraged autonomous program planning by members to build a creative community</li>
+                        <li>Led speaker outreach and overall planning for semester-long entrepreneurship community program</li>
+                    </ul>
+                </div>
+
+                <div class="activity-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Educational Outreach Programs in POSTECH</div>
+                            <div class="item-role">Mentor & Program Staff</div>
+                        </div>
+                        <div>
+                            <div class="item-location">Various Locations, S.Korea</div>
+                            <div class="item-date">Dec. 2018 - Jul. 2021</div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Participated as mentor and organizing staff for POSTECH's Creative Camp for high school students (2018, 2019, 2021)</li>
+                        <li>Mentored BMC practice sessions and led large-scale 2-day projects during the camp</li>
+                        <li>Guided student team at Hwirang Youth Startup Camp on business model development and presentation (Feb. 2021)</li>
+                        <li>Taught App Inventor and gave lecture on college life at Gachibaeum Winter Science Camp (Jan. 2020)</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
