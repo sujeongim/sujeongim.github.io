@@ -187,6 +187,31 @@
             color: #2d3748;
         }
 
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #4a5568;
+        }
+
+        .skill-category h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+
+        .skill-category p {
+            color: #555;
+            line-height: 1.6;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 10px;
@@ -212,6 +237,10 @@
                 flex-direction: column;
                 gap: 10px;
             }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -221,16 +250,16 @@
             <h1>Sujeong Im</h1>
             <div class="subtitle">PHD · AI, HEALTHCARE, NLP</div>
             <div class="contact-info">
-                <span>📍 Anyang-si, Gyeonggi-do, South Korea</span>
+                <span>📍 43, Imgok-ro, Dongan-gu, Anyang, 13916, South Korea</span>
                 <a href="tel:+821076750372">📞 (+82) 10-7675-0372</a>
                 <a href="mailto:imsujeong2190@gmail.com">✉️ imsujeong2190@gmail.com</a>
             </div>
             <div class="contact-info">
                 <a href="https://sujeongim.github.io/" target="_blank">🌐 Website</a>
-                <a href="https://github.com/sujeongim" target="_blank">💻 GitHub</a>
-                <a href="https://www.linkedin.com/in/sujeong-im-382959218/" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/sujeongim" target="_blank">💻 GitHub (sujeongim)</a>
+                <a href="https://www.linkedin.com/in/sujeong-im-382959218/" target="_blank">💼 LinkedIn (sujeongim)</a>
             </div>
-            <div class="quote">"Small, steady steps can change the world."</div>
+            <div class="quote">"Consistent drops of effort eventually carve out a river of profound impact."</div>
         </header>
 
         <div class="content">
@@ -267,7 +296,7 @@
                             <div class="item-date">Feb. 2023 - Feb. 2025</div>
                         </div>
                     </div>
-                    <div><strong>Thesis:</strong> LabTOP - A Unified Model for Lab Test Outcome Prediction on Electronic Health Records</div>
+                    <div><strong>Thesis Title:</strong> LabTOP - A Unified Model for Lab Test Outcome Prediction on Electronic Health Records</div>
                 </div>
 
                 <div class="edu-item">
@@ -278,10 +307,10 @@
                         </div>
                         <div>
                             <div class="item-location">Berkeley, CA, USA</div>
-                            <div class="item-date">Aug. 2018 - Dec. 2018</div>
+                            <div class="item-date">Aug. 2018 - Feb. 2022</div>
                         </div>
                     </div>
-                    <div><strong>Courses:</strong> Multivariable Calculus, CS101, CS188 (opencourse)</div>
+                    <div><strong>Taken Courses:</strong> Multivariable Calculus, CS101, CS188 (opencourse)</div>
                 </div>
 
                 <div class="edu-item">
@@ -295,7 +324,7 @@
                             <div class="item-date">Feb. 2018 - Feb. 2022</div>
                         </div>
                     </div>
-                    <div><strong>Courses:</strong> Calculus I, Applied Linear Algebra, Discrete Math, Probability and Statistics, Algorithm, Data Structure, OOP, Machine Learning, Artificial Intelligence</div>
+                    <div><strong>Taken Courses:</strong> Calculus I, Applied Linear Algebra, Discrete Math for Computer Science, Probability and Statistics for Engineers, Algorithm, Data Structure, Object Oriented Programming, Machine learning, Artificial Intelligence</div>
                 </div>
             </section>
 
@@ -309,7 +338,7 @@
 
                 <div class="publication">
                     <div class="pub-title">[2] Publicly Shareable Clinical Large Language Model Built on Synthetic Clinical Notes</div>
-                    <div>Sunjun Kweon, Junu Kim, Jiyoun Kim, Sujeong Im, Eunbyeol Cho, Seongsu Bae, Jungwoo Oh, Gyubok Lee, Jong Hak Moon, Seng Chan You, Seungjin Baek, Chang Hoon Han, Yoon Bin Jung, Yohan Jo, Edward Choi</div>
+                    <div>Sunjun Kweon et al.</div>
                     <div class="pub-venue">Findings of the Association for Computational Linguistics ACL 2024, pp. 5148–5168</div>
                 </div>
 
@@ -347,16 +376,36 @@
                         <li>Implemented dog tracking and background removal techniques using OpenCV to preprocess walking video data</li>
                         <li>Applied pose estimation models to canine gait videos and conducted comparative performance evaluation of prior models</li>
                         <li>Set up a data annotation environment tailored for tagging canine joint positions</li>
-                        <li>Prepared a labeling pipeline using DeepLabCut; created tutorials and environment setup guides</li>
+                        <li>Prepared a labeling pipeline using DeepLabCut; created tutorials and environment setup guides to streamline team onboarding</li>
                         <li>Automated dog cropping from video frames using OpenCV and Darknet to reduce annotation workload</li>
-                        <li>Converted annotation files from XML to JSON format to improve compatibility with model training pipelines</li>
-                        <li>Led pilot tagging sessions and defined consistent annotation guidelines</li>
+                        <li>Converted output annotation files from XML to JSON format to improve compatibility with downstream model training pipelines</li>
+                        <li>Led pilot tagging sessions and defined consistent annotation guidelines to ensure labeling quality and reproducibility across contributors</li>
+                        <li>Executed frame-by-frame joint labeling using annotation tools on both video and image datasets</li>
                     </ul>
                 </div>
             </section>
 
             <section>
                 <h2>Extracurricular Activities</h2>
+                <div class="activity-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Edlab, KAIST</div>
+                            <div class="item-role">Lab Manager</div>
+                        </div>
+                        <div>
+                            <div class="item-location">Sungnam, S.Korea</div>
+                            <div class="item-date">Sep. 2025 -</div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Initiated a structured lab seminar series for internal research updates</li>
+                        <li>Authored the inaugural lab operations manual to streamline the on-boarding process for new members and ensure consistency in research activities</li>
+                        <li>Structured the lab's hierarchy and optimized resource allocation by assigning clear functional roles to each member</li>
+                        <li>Standardized lab governance by establishing API usage guidelines and fundamental operating procedures</li>
+                    </ul>
+                </div>
+
                 <div class="activity-item">
                     <div class="item-header">
                         <div>
@@ -373,6 +422,7 @@
                         <li>Planned and hosted the startup hackathon "Random Talk Show"</li>
                         <li>Encouraged autonomous program planning by members to build a creative community</li>
                         <li>Led speaker outreach and overall planning for semester-long entrepreneurship community program</li>
+                        <li>Hosted and mentored participants during various events and sessions</li>
                     </ul>
                 </div>
 
@@ -388,11 +438,45 @@
                         </div>
                     </div>
                     <ul>
-                        <li>Participated as mentor and organizing staff for POSTECH's Creative Camp for high school students (2018, 2019, 2021)</li>
-                        <li>Mentored BMC practice sessions and led large-scale 2-day projects during the camp</li>
-                        <li>Guided student team at Hwirang Youth Startup Camp on business model development and presentation (Feb. 2021)</li>
-                        <li>Taught App Inventor and gave lecture on college life at Gachibaeum Winter Science Camp (Jan. 2020)</li>
+                        <li>Participated as a mentor and organizing staff for POSTECH's Creative Camp for high school students (2018, 2019, 2021)</li>
+                        <li>Mentored BMC practice sessions and led a large-scale 2-day project during the camp</li>
+                        <li>Guided a student team at Hwirang Youth Startup Camp on business model development and presentation (Feb. 2021)</li>
+                        <li>Taught App Inventor and gave a lecture on college life at Gachibaeum Winter Science Camp (Jan. 2020)</li>
                     </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>LLM Inference and Serving</h3>
+                        <p>Huggingface, VLLM, LiteLLM, Unsloth</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Clinical Libraries</h3>
+                        <p>MEDS, TIMER</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Pretrained Models</h3>
+                        <p>GPT-2 (53M)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Fine-tuned Models</h3>
+                        <p>Llama-3.1-8B (sft), Llama-3-8B (sft-ppo)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Open Source Models for Inference</h3>
+                        <p>Llama-3.1-8B, Qwen3-235B-A22B-Thinking-2507-FP8, Qwen3-Next-80B-A3B-Thinking, Qwen3-Next-80B-A3B-Instruct, Llama-4-Scout-17B-16E-Instruct, Llama-4-Maverick-17B-128E-Instruct-FP8</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <p>Python, C, C++, LaTeX</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <p>Korean, English</p>
+                    </div>
                 </div>
             </section>
         </div>
